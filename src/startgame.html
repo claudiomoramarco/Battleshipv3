@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Battle Ships on Ethereum</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title-section">
+      <h1>Welcome on ET-Battleship</h1>
+    </div>
+      
+    <!--da qui la sezione che dovremo modificare piu in avanti per renderla solo multiplayer-->
+    <button id="giocatoreSingoloBottone">Giocatore Singolo</button>
+    <button id="multiplayerBottone">Multiplayer</button>
+    <!--button per le modalita di gioco-->
+    <div class ='Giocatore g1'>
+      Giocatore 1
+      <div class="connesso">Connesso<span></span></div>
+      <div class="Pronto">Giocatore 1 Pronto<span></span></div>
+    </div>
+
+    <div class ='Giocatore g2'>
+      Giocatore 2
+      <div class="connesso">Connesso<span></span></div>
+      <div class="Pronto">Giocatore 1 Pronto<span></span></div>
+    </div>
+    <!--fino qui la sezione che dovremo modificare piu in avanti per renderla solo multiplayer-->
+
+
+    </div>
+    <div class="container">
+        <div class="griglia griglia-user"></div>
+        <div class="griglia griglia-enemy"></div>
+    </div>
+
+      <div class="hidden-info">
+        <button id="start" class="avvio">Avvia Gioco</button>
+        <button id="rotate" class="avvio">Ruota le Tue Navi</button>
+        <h3 id="whose-go">Turno del giocatore:</h3>
+        <h3 id="info">Le regole del gioco sono semplici. Devi posizionare le tue navi sulla griglia utente. <br> Dopo aver posizionato le navi, puoi avviare il gioco premendo il pulsante "Avvia Gioco"<br>  Buona fortuna!</h3>
+      </div>
+
+    <div class="griglia-display">
+      <div class="nave naveuno-container" draggable="true"><div id="naveuno-0"></div><div id="naveuno-1"></div></div>
+      <div class="nave navedue-container" draggable="true"><div id="navedue-0"></div><div id="navedue-1"></div><div id="navedue-2"></div></div>
+      <div class="nave navetre-container" draggable="true"><div id="navetre-0"></div><div id="navetre-1"></div><div id="navetre-2"></div></div>
+      <div class="nave navequattro-container" draggable="true"><div id="navequattro-0"></div><div id="navequattro-1"></div><div id="navequattro-2"></div><div id="navequattro-3"></div></div>
+      <div class="nave navecinque-container" draggable="true"><div id="navecinque-0"></div><div id="navecinque-1"></div><div id="navecinque-2"></div><div id="navecinque-3"></div><div id="navecinque-4"></div></div>
+    </div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@metamask/detect-provider@1.2.0/dist/detect-provider.min.js"></script>
+    
+
+    
+    <script src="js/web3.min.js"></script>  
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+  </body>
+</html>

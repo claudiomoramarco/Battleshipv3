@@ -1,0 +1,329 @@
+body {  
+  margin: 0;
+  background-color: bisque;
+  overflow: hidden;
+  
+}
+
+*, *:before, *:after {
+  font-family: 'Belanosima', sans-serif;
+  box-sizing: border-box;
+}
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 66vh;
+}
+
+
+
+.title-section{
+  display: flex;
+  font-family: 'Belanosima', sans-serif;
+  justify-content: center;
+  background-color: hsl(0, 0%, 22%);
+  padding: 5px;
+  border-radius: 10px;
+  color: #c300ff;
+
+}
+
+.splash-titolo {
+  font-family: 'Belanosima', sans-serif;   
+  font-size: 10rem;
+}
+
+.btn{
+  background-color: hsl(40,100%,50%);
+  padding: .5em 1em;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: .7em;
+  color: #333;
+}
+
+
+.splash-btn {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: aliceblue;
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, transform;
+}
+
+
+.splash-btn:first-child{
+  margin-left: 0;
+}
+
+.splash-btn:first-child {
+  margin-left: 0;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.avvio {
+  display:flexbox;
+  justify-self: center;
+  margin-left: 100px;
+  background-color:  #9C27B0;
+  padding: 20px;
+  outline: none;
+  border: 9px;
+  cursor: pointer;
+  border-radius: .7em;
+  color: #ffffff;
+}
+
+.avvio:hover,.avvio:focus,.avvio:active{
+  text-decoration-color: #9C27B0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.navi{
+  position:absolute;
+  transform: rotateY(180deg);
+  pointer-events: none;
+  opacity: .20;
+  margin-top: 0px;
+  margin-bottom: 250px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.container {
+  display: flex;
+}
+
+.griglia-user {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  margin: 20px;
+  border-radius: 8px; /* Bordi arrotondati Material Design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Effetto ombra */
+}
+
+.griglia div {
+  width: 40px;
+  height: 40px;
+                    /* Colore di sfondo ispirato a Material Design */
+  border-radius: 5px; /* Bordi arrotondati Material Design */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); /* Effetto ombra Material Design */
+}
+
+.griglia-enemy {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #00FFC8; /* Colore di sfondo ispirato a Battaglia Navale */
+  margin: 20px;
+  border-radius: 8px; /* Bordi arrotondati Material Design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Effetto ombra */
+}
+
+
+
+
+.griglia-display {
+  width: 400px;
+  height: 800px;
+  margin: 20px;
+  background-color: #ffffff; /* Giallo Material Design */
+  border: 20px solid #FFC107; /* Colore bordo giallo scuro Material Design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effetto ombra Material Design */
+  transition: box-shadow 0.3s ease; /* Effetto transizione ombra Material Design */
+  margin: 20px;
+  border-radius: 8px; /* Bordi arrotondati Material Design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Effetto ombra */
+}
+
+
+
+
+.naveuno-container {
+  width: 80px;
+  height: 40px;
+  background-color: #FF9800; /* Colore arancione Material Design */
+  margin: 10px;
+  display: flex;
+  align-items: center; /* Centra il contenuto verticalmente */
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  border-radius: 4px; /* Bordi arrotondati Material Design */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Effetto ombra */
+}
+
+
+.naveuno-container-vertical {
+  width: 40px;
+  height: 80px;
+     /* Colore arancione Material Design */
+  margin: 10px;
+  display: flex;
+  align-items: center; /* Centra il contenuto verticalmente */
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  flex-wrap: wrap;
+  border-radius: 4px; /* Bordi arrotondati Material Design */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Effetto ombra */
+}
+
+.navedue-container {
+  width: 120px;
+  height: 40px;
+  background-color: #F44336; /* Colore rosso Material Design */
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navedue-container-vertical {
+  width: 40px;
+  height: 120px;
+  background-color: #F44336;
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navetre-container {
+  width: 120px;
+  height: 40px;
+  background-color: #9C27B0; /* Colore viola Material Design */
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navetre-container-vertical {
+  width: 40px;
+  height: 120px;
+  background-color: #9C27B0;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navequattro-container {
+  width: 160px;
+  height: 40px;
+  background-color: #03A9F4; /* Colore blu Material Design */
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navequattro-container-vertical {
+  width: 40px;
+  height: 160px;
+  background-color: #03A9F4;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navecinque-container {
+  width: 200px;
+height: 40px;
+background-color: #4CAF50; /* Colore verde Material Design */
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navecinque-container-vertical {
+  width: 40px;
+  height: 200px;
+  background-color: #4CAF50;
+margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.nave div {
+  width: 40px;
+  height: 40px;
+}
+
+.naveuno {
+  background-color: #FF9800;
+  
+}
+
+.navedue {
+  background-color: #9c0c01;
+}
+
+.navetre {
+  background-color:purple;
+}
+
+.navequattro {
+  background-color: #03A9F4;
+}
+
+.navecinque {
+  background-color: #4CAF50 
+  
+}
+
+.boom {
+  background-color: red;
+
+}
+
+
+.miss {
+  background-color: black;
+}
+
+.div {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 2px;
+}

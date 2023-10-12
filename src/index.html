@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Playing Battleship On Ethereum</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+  <!-- stile css -->
+</head>
+<body>
+  <div class="splash-container">
+    <img src="images/image.png" class="nave">
+    <h1 class="splash-titolo">Battleship on Ethereum</h1>
+    <div>
+      <a href="/startgame.html" class="btn splash-btn">Avvia Gioco</a>
+    </div>
+  </div>
+  <h4>Inserisci l'importo del Premio in ETH</h4>
+              <input required type="number" id="grandPrize">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+        <hr/>
+        <br/>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  
+ <!--<script src="https://cdn.jsdelivr.net/npm/@metamask/detect-provider@1.2.0/dist/detect-provider.min.js"></script>--> 
+
+ <script type="module">
+  import web3Utils from 'https://cdn.jsdelivr.net/npm/web3-utils@3.0.0-rc.0/+esm';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    window.web3Utils = web3Utils;
+
+  });
+  </script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
